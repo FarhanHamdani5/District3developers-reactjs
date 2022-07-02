@@ -1,11 +1,17 @@
 import './App.css';
+import Home from './Components/Home';
+import Nav from './Components/nav.js';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header><h1>hello</h1></header>
-    </div>
-  );
-}
+    <div className='App'>
 
-export default App;
+      <div className='App-Header'>
+        <Nav homenavtext='Home' aboutnavtext = 'About'  contactnavtext = 'Contact'/>
+      </div>
+      <div className='container'>
+        <Home></Home>
+      </div>
+    </div>
+      );
+}
